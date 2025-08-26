@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica;
+  background-color: #ddd;
+}
+/* tag container para centralizar o elemento, widith para dizer o tamanho máximo dele, 
+position relative + margin de 50px em cima e embaixo e o auto para as laterais,
+com esse auto o navegador automaticamente iguala as laterais.
+Padding para o espaçamento interno dos conteúdos na div */
+.container {
+  max-width: 1135px;
+  max-height: 100%;
+  background-color: #d1cece;
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 50px;
+}
+
+.bold {
+  font-weight: bold;
+}
+/* header */
+.header {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 40px;
+  font-style: oblique;
+}
+
+.main-paragraphy {
+  font-style: italic;
+}
+
+/* Imagem Destaque */
+.feature-image {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Biografia */
+.biography-container {
+  padding: 25px 0;
+  margin: 25px 0;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+}
+/* Citações */
+.quotes-container {
+  background-color: #ddd;
+  padding: 30px;
+  border-radius: 60px;
+}
+/* Agora eu quero mexer apenas na tag blockquote que está dentro da classe quotes-container.
+Assim não mexerá no parágrafo */
+.quotes-container blockquote {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.quotes-container p {
+  font-style: italic;
+}
+/* Curiosidades */
+.curiosities-container {
+  padding: 25px 0;
+  margin: 25px 0;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+}
+
+.curiosities-container li {
+  height: 30px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+/* imagem bold */
+.img-bold {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* esse padding bottom é para ganharmos um espaço a mais  */
+body {
+  padding-bottom: 500px;
+}
+
+/* 10px em todas as div para afastar um input do outro */
+div {
+  margin-bottom: 10px;
+}
+
+/* display de block para ter um em cada linha, a label nao fica mais atrás do input */
+
+div input,
+div label {
+  display: block;
+}
+
+/* in line block para deixar a escrita ao lado direito da caixa de marcação, 
+pelo padrão ela vem em baixo */
+.radio label,
+.radio input,
+.radio span {
+  display: inline-block;
+}
+
+/* Menu */
+.navbar-items {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  display: inline-block;
+  margin-right: 50px;
+}
+.navbar-items li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+.navbar-items a {
+  color: #0f0e0e;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navbar-items a:hover {
+  color: #ccc;
+}
+.default-btn {
+  padding: 15px 20px;
+  background-color: #2cc76a;
+  border-radius: 5px;
+}
+.navbar-items .default-btn:hover {
+  background-color: #22bb5f;
+  color: #fff;
+}
+
+nav {
+  position: relative;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 88px;
+  background-color: #5a6979;
+  padding: 0 2rem;
+  max-width: 1135px;
+  margin: auto;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-weight: bold;
+  margin: 5% 0 100px;
+  background-color: #34454e;
+  padding: 50px 0;
+  margin: auto;
+  max-width: 100%;
+}
+footer p {
+  color: #ccc;
+}
+
+h1,
+h2 {
+  padding-bottom: 15px;
+}
+
+.form-container {
+  background-color: #ccc;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: 0;
+}
+input {
+  margin-left: 320px;
+}
+/* Com esse comando eu pego só os tipo de input que quero alterar, pois se colocarmos o input
+no geral, até os botões ficarão com essa medida grande, então melhor selecionarmos */
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+  width: 400px;
+}
+
+textarea {
+  padding: 10px 5px;
+}
+.button {
+  margin-left: 320px;
+  padding: 1px;
+  display: block;
+}
