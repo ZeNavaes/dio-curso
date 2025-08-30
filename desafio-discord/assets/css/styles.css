@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 2792px;
+}
+
+header {
+  width: 100%;
+  background-image: url(/assets/img/Header\ Background.png);
+  padding: 15px;
+  h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: #ffffff;
+    font-style: normal;
+  }
+  p {
+    font-family: "Open Sans", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    font-style: normal;
+    margin-bottom: 25px;
+  }
+}
+
+.buttons {
+  width: 381px;
+  height: 122px;
+  margin-bottom: 50px;
+  img {
+    height: 54px;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.space {
+  height: 573px;
+  width: 100%;
+  padding: 15px;
+
+  img {
+    max-width: 428px;
+    max-height: 252px;
+    margin-top: 40px;
+    padding: auto 15px;
+  }
+  h2 {
+    font-family: "Open Sans", cursive;
+    font-weight: 800;
+  }
+  p {
+    font-family: "Open Sans", cursive;
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-right: 15px;
+  }
+}
+
+#space2 {
+  background-color: #f6f6f6;
+}
+
+#space4 {
+  background-color: #f6f6f6;
+
+  h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: #23272a;
+    font-style: normal;
+
+    max-width: 376px;
+  }
+}
+
+footer {
+  background-color: #23272a;
+  width: 100%;
+  height: 140px;
+
+  display: flex;
+  img {
+    max-width: 162px;
+    max-height: 45px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    width: 100%;
+    background-size: cover;
+
+    .text {
+      margin: 20px 40%;
+    }
+    .buttons {
+      display: flex;
+      margin: auto 35%;
+    }
+  }
+  .space {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    h2,
+    h1,
+    p {
+      width: 500px;
+      flex-wrap: wrap;
+      margin: 50px auto;
+      align-items: center;
+    }
+  }
+}
